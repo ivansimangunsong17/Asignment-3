@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: antiquewhite;
+  background-color: rgb(223, 222, 222);
 }
 
 body {
@@ -9,15 +9,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url('https://img.freepik.com/free-vector/virus-concept-illustration_114360-1596.jpg?size=626&ext=jpg');
 }
 
 .bagianMenu {
   display: flex;
   flex-wrap: wrap;
   align-items: end;
-padding: 20px;
+  padding: 20px;
   justify-content: space-around;
-  background-color: rgb(158, 90, 3);
+  background-color: rgb(239, 236, 236);
   height: 500px;
   width: 550px;
   border-radius: 50px;
@@ -26,10 +27,10 @@ padding: 20px;
 
 .bagianMenu .bagian-1 {
   background-color: aqua;
-  height: 100px;
+  height: 50px;
   width: 100%;
   border-radius: 50px;
-  
+
   /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
 }
 .bagianMenu .bagian-2 {
@@ -82,79 +83,133 @@ padding: 20px;
 }
 
 .bagianMenu .bagian-2 .logo-1 {
-    position: relative;
-    top:-35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgb(204, 224, 224);
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
-  }
+  position: relative;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(204, 224, 224);
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  border: 2px solid #000;
+}
+
+.bagianMenu .bagian-2 .logo-1 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
+
 .bagianMenu .bagian-3 .logo-2 {
-    position: relative;
-    top:-35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgb(204, 224, 224);
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
-  }
-.bagianMenu .bagian-3 .logo-2 {
-    position: relative;
-    top:-35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgb(204, 224, 224);
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
-  }
+  position: relative;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(204, 224, 224);
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  border: 2px solid #000;
+}
+
+.bagianMenu .bagian-3 .logo-2 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
+
 .bagianMenu .bagian-4 .logo-3 {
-    position: relative;
-    top:-35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgb(204, 224, 224);
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
-  }
+  position: relative;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(204, 224, 224);
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  border: 2px solid #000;
+}
+
+.bagianMenu .bagian-4 .logo-3 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
+
 .bagianMenu .bagian-5 .logo-4 {
-    position: relative;
-    top:-35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgb(204, 224, 224);
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
-  }
+  position: relative;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(204, 224, 224);
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  border: 2px solid #000;
+}
+
+.bagianMenu .bagian-5 .logo-4 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
+
 .bagianMenu .bagian-6 .logo-5 {
-    position: relative;
-    top:-35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgb(204, 224, 224);
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
-  }
-  .bagianMenu .bagian-7 .logo-6 {
-    position: relative;
-    top:-35px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgb(204, 224, 224);
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    /* box-shadow: 26px 26px 52px #cecece, -26px -26px 52px #ffffff; */
-  }
+  position: relative;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(204, 224, 224);
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  border: 2px solid #000;
+}
+
+.bagianMenu .bagian-6 .logo-5 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
+
+.bagianMenu .bagian-7 .logo-6 {
+  position: relative;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(204, 224, 224);
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  border: 2px solid #000;
+}
+
+.bagianMenu .bagian-7 .logo-6 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
