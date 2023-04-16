@@ -4,45 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <title>Tugas 3</title>
   </head>
   <body>
-    <div class="bagianMenu">
-      <div class="bagian-1"></div>
+    <div class="bagianMenu2">
+      <h1>Covid-19 Tracker</h1>
+      <div class="bagianMenu">
+        <div class="bagian-1">
+          <form action="click" class="myForm">
+            <input type="text" id="fname" name="fname" placeholder="Country..." />
+          </form>
 
-      <div class="bagian-2">
-        <div class="logo-1">
-          <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/activecase.svg" alt="" />
+          <div class="bagianButton">
+            <button type="button" onclick="formSubmit()" class="button-1">SUBMIT</button>
+          </div>
         </div>
-      </div>
 
-      <div class="bagian-3">
-        <div class="logo-2">
-          <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/newcase.svg" alt="" />
+        <div class="bagian-2">
+          <div class="logo-1">
+            <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/activecase.svg" alt="" />
+          </div>
+          <h3>Active Cases</h3>
+          <h2 id="activeCases">----</h2>
         </div>
-      </div>
 
-      <div class="bagian-4">
-        <div class="logo-3">
-          <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/recoverycase.svg" alt="" />
+        <div class="bagian-3">
+          <div class="logo-2">
+            <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/newcase.svg" alt="" />
+          </div>
+          <h3>New Cases</h3>
+          <h2 id="newCases">----</h2>
         </div>
-      </div>
-      <div class="bagian-5">
-        <div class="logo-4">
-          <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/totalcase.svg" alt="" />
+
+        <div class="bagian-4">
+          <div class="logo-3">
+            <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/recoverycase.svg" alt="" />
+          </div>
+          <h3>Recovered Cases</h3>
+          <h2 id="recoveredCases">----</h2>
         </div>
-      </div>
-      <div class="bagian-6">
-        <div class="logo-5">
-          <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/totaldeath.svg" alt="" />
+        <div class="bagian-5">
+          <div class="logo-4">
+            <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/totalcase.svg" alt="" />
+          </div>
+          <h3>Total Cases</h3>
+          <h2 id="totalCases">----</h2>
         </div>
-      </div>
-      <div class="bagian-7">
-        <div class="logo-6">
-          <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/totaltest.svg" alt="" />
+        <div class="bagian-6">
+          <div class="logo-5">
+            <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/totaldeath.svg" alt="" />
+          </div>
+          <h3>Total Death</h3>
+          <h2 id="deathCases">----</h2>
+        </div>
+        <div class="bagian-7">
+          <div class="logo-6">
+            <img src="https://raw.githubusercontent.com/ivansimangunsong17/Asignment-3/0a1b2676ede09d523cdddde4dc97eaceb2870e17/totaltest.svg" alt="" />
+          </div>
+          <h3>Total Test</h3>
+          <h2 id="totalTest">----</h2>
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
+  
 </html>

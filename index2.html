@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Fetch API</title>
+  <style>
+    /* CSS untuk tampilan data */
+    #data-container {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    .user-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .user-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .user-info {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Container untuk menampilkan data -->
+  <div id="data-container">
+    <!-- Placeholder untuk data yang akan di-fetch -->
+  </div>
+
+  <script>
+    // Fetch API untuk mendapatkan data
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(users => {
+        // Mendapatkan container untuk data
+        const dataContainer = document.getElementById('data-container');
+
+        // Loop melalui data dan menambahkan card untuk setiap user
+        users.forEach(user => {
+          const userCard = document.createElement('div');
+          userCard.className = 'user-card';
+
+          const userAvatar = document.createElement('img');
+          userAvatar.className = 'user-avatar';
+          userAvatar.src = 'https://via.placeholder.com/50'; // Ganti dengan URL avatar user yang sebenarnya
+
+          const userInfo = document.createElement('div');
+          userInfo.className = 'user-info';
+          userInfo.textContent = `ID: ${user.id}, Name: ${user.name}, Email: ${user.email}`; // Menampilkan data user yang diambil dari Fetch API
+
+          userCard.appendChild(userAvatar);
+          userCard.appendChild(userInfo);
+          dataContainer.appendChild(userCard);
+        });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
